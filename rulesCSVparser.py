@@ -1,7 +1,7 @@
 # Rules.CSV Parser
 # Designed to convert the rules.csv file in Starsector into (vaguely) human readable text
 # By Scrinarus
-# V1.1 - new update - descriptions.csv reading added! and cleaned up initial code for more flexibility
+# V1.2 - new update - created a new separate script to run comparisons between codex versions! Also set both flags in this parser to true by default.
 
 import pandas as pd
 import os
@@ -16,7 +16,7 @@ rules_output = "rules.txt"
 desc_output = "desc.txt"
 
 #allows toggling descriptions and rules parsing - mostly for debug, no real reason to not run both
-rules_run = False
+rules_run = True
 desc_run = True
 
 # Obtain path of starsector folder
